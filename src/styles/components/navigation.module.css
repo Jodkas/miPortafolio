@@ -1,0 +1,271 @@
+.container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 50;
+  background-color: #eee;
+  font-size: 1.7rem;
+  font-family: bebasNeue;
+  letter-spacing: 1px;
+  -webkit-filter: drop-shadow(0 0 5px #000c);
+  filter: drop-shadow(0 0 5px #000c);
+  height: 60px;
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+}
+
+.container[isvisible='true'] {
+  transform: translateY(0%);
+}
+
+.logo {
+  display: none;
+}
+
+.container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+  height: 100%;
+}
+
+.container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  height: 100%;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: transform 0.3s;
+}
+
+.container li:hover{
+  border-bottom: 2px solid #111;
+}
+
+.container li:hover > .link{
+  transform: scale(1.1);
+}
+
+.container .link {
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #111;
+  -webkit-transition: color 0.3s, -webkit-transform 0.1s;
+  transition: color 0.3s, -webkit-transform 0.1s;
+  -o-transition: transform 0.1s, color 0.3s;
+  transition: transform 0.1s, color 0.3s;
+  transition: transform 0.1s, color 0.3s, -webkit-transform 0.1s;
+}
+
+.selected {
+  background-color: #eee;
+}
+.selected > .link {
+  color: #111111;
+}
+
+.background {
+  display: none;
+}
+.button {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .logo {
+    display: block;
+    font-size: 0.28rem;
+    position: absolute;
+    top: 50%;
+    padding-left: 1rem;
+    z-index: 80;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .container ul {
+    position: fixed;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #222222;
+    top: 0;
+    left: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 60px 10px;
+    -webkit-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    transform: translateX(5px);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    width: 0;
+  }
+
+  .container ul[open] {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    width: auto;
+  }
+
+  .container li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 3px 0;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    -webkit-transition: background-color 0;
+    -o-transition: background-color 0;
+    transition: background-color 0;
+  }
+
+  .container li:hover {
+    background-color: #fff0;
+  }
+
+  .container li:hover > .link {
+    color: #eee;
+  }
+
+  .container .link {
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: color 0, -webkit-transform 0;
+    transition: color 0, -webkit-transform 0;
+    -o-transition: transform 0, color 0;
+    transition: transform 0, color 0;
+    transition: transform 0, color 0, -webkit-transform 0;
+    color: #eee;
+  }
+
+  .selected {
+    background-color: #eee0;
+  }
+
+  .selected > .link {
+    color: #eee;
+  }
+
+  .background {
+    width: 100vw;
+    background-color: #2227;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+  .background[open] {
+    height: 100vh;
+    opacity: 1;
+  }
+
+  .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    background: transparent;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border: 0;
+    padding: 0;
+    margin: 0 1rem;
+    top: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    right: 0;
+    z-index: 80;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .span {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    background-color: #eee;
+    width: 100%;
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    -o-transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  }
+
+  .button[open] > .span:first-child {
+    -webkit-transform: rotate(45deg) translateY(50%);
+    -ms-transform: rotate(45deg) translateY(50%);
+    transform: rotate(45deg) translateY(50%);
+  }
+  .button[open] > .span:last-child {
+    -webkit-transform: rotate(-45deg) translateY(-50%);
+    -ms-transform: rotate(-45deg) translateY(-50%);
+    transform: rotate(-45deg) translateY(-50%);
+  }
+  .button[open] > .span:nth-child(2) {
+    opacity: 0;
+  }
+}
