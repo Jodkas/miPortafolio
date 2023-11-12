@@ -1,49 +1,43 @@
+<h1 align="center">Portafolio de Lucas Cardozo</h1>
+
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+  ¡Bienvenido a mi portafolio!
 </p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
 
-## 🚀 Quick start
+<p align="center">
+  Soy Lucas Cardozo, un desarrollador apasionado por crear soluciones innovadoras y funcionales. Me encanta enfrentar nuevos retos y aprender constantemente para mejorar mis habilidades. Actualmente, estudio ingeniería informática y disfruto explorando diferentes tecnologías y herramientas para el desarrollo web y de software.
+</p>
 
-1.  **Create a Gatsby site.**
+## 🚀 Habilidades destacadas
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+- **Desarrollo Front-end:** HTML, CSS, JavaScript
+- **Frameworks y bibliotecas:** ReactJS
+- **Desarrollo Back-end:** Node.js
+- **Base de datos:** SQLite
+- **Lenguajes de programación:** C
+- **Herramientas adicionales:** Excel, Google Sheets, Photoshop
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## 💡 Proyectos destacados
 
-2.  **Start developing.**
+Aquí encontrarás una muestra de algunos de mis proyectos destacados:
 
-    Navigate into your new site’s directory and start it up.
+1. **Página web de un Bowling**
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+   - Utilizando la herramienta Remix y React, desarrollé una página web para un centro de bowling.
+   - Incluye información sobre la empresa, su historia y el menú del restaurante.
+   - Proporciona una experiencia interactiva para los visitantes.
 
-3.  **Open the code and start customizing!**
+2. **Juego de autos en Scratch**
 
-    Your site is now running at http://localhost:8000!
+   - Como proyecto para una materia de ingeniería, creé un emocionante juego de carreras de autos en Scratch.
+   - Los jugadores compiten en diferentes circuitos y pueden desbloquear nuevas pistas a medida que avanzan.
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+3. **Página web para una heladería**
+   - Diseñé y desarrollé un sitio web atractivo para una heladería local.
+   - Incluye información sobre los sabores de helado, ubicación, horarios de apertura y un formulario de contacto.
 
-4.  **Learn more**
+## 📞 Contacto
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Si estás interesado en colaborar en proyectos emocionantes o simplemente quieres ponerte en contacto, no dudes en escribirme a lucasivancardozo27@gmail.com.
 
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+¡Gracias por visitar mi portafolio! Espero que disfrutes explorando mis proyectos y habilidades.
