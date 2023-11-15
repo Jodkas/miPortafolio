@@ -1,6 +1,7 @@
 .container {
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  width: 100vw;
   top: 0px;
   z-index: 50;
   background-color: #eee;

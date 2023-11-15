@@ -1,9 +1,10 @@
 import * as React from 'react';
+import * as styles from '../styles/pages/index.module.css';
 import nexaLight from '../assets/fonts/Nexa-ExtraLight.woff2';
 import nexa from '../assets/fonts/Nexa-Heavy.woff2';
 
 const IndexPage = () => {
-  return <main></main>;
+  return <main className={styles.main}></main>;
 };
 
 export default IndexPage;
