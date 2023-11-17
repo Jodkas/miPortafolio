@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container>h3 {
+  text-align: center;
+  margin: .5em 0;
+}
+
+.programs {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  height: 2.8em;
+}
+
+.programs > li {
+  aspect-ratio: 1/1;
+  height: 100%;
+}
+
+.programs img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}

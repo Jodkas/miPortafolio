@@ -1,11 +1,4 @@
 @font-face {
-  font-family: NexaLight;
-  src: local('NexaLight'),
-    url(../assets/fonts/Nexa-ExtraLight.woff2) format('woff2');
-  font-display: swap;
-}
-
-@font-face {
   font-family: Nexa;
   src: local('Nexa'),
     url(../assets/fonts/Nexa-Heavy.woff2) format('woff2');
@@ -17,6 +10,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  scroll-behavior: smooth;
 }
 
 /* Sections
@@ -32,6 +26,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   margin: 0;
+  font-family: Nexa;
   font-size: 1rem;
   overflow-x: hidden;
 }
@@ -68,9 +63,10 @@ main {
 ul{
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
 

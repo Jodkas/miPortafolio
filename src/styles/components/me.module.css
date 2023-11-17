@@ -1,0 +1,125 @@
+.container {
+  position: relative;
+  aspect-ratio: 3/4;
+  height: 25em;
+  margin-bottom: 3em;
+  width: max-content;
+  margin-left: 2.2em;
+  filter: drop-shadow(0px 0px .2em #fff)drop-shadow(0px 0px .2em #fff)drop-shadow(0px 0px .2em #fff)drop-shadow(0px 0px .2em #fff);
+}
+
+.container > img {
+  position: absolute;
+  top: 0;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.circle {
+  position: absolute;
+  bottom: 0.23em;
+  background-color: black;
+  aspect-ratio: 1/1;
+  width: 98.3%;
+  border-radius: 100%;
+  box-shadow: 1px 3px 10px 0px #0005;
+}
+
+.container > ul {
+  position: absolute;
+  display: flex;
+  margin: 0;
+  margin-left: -2.2em;
+  gap: 0.8em;
+  flex-direction: column;
+  justify-content: end;
+  width: 1.8em;
+  height: 105%;
+  transform-origin: 300% 50%;
+  transform: translateX(10em) rotate(110deg) scale(0.4);
+  transition: transform 2s ease;
+}
+
+.container[isvisible='true'] > ul {
+  transform: translateY(0em);
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-name: z;
+  animation-fill-mode: forwards;
+}
+
+.container[isvisible='true'] > ul > .instagram {
+  transform: rotate(0deg);
+}
+
+.container[isvisible='true'] > ul > .linkedin {
+  transform: translate(0em, 0em) rotate(0deg);
+}
+
+.container[isvisible='true'] > ul > .whatsapp {
+  transform: translate(0em, 0em) rotate(0deg);
+}
+
+.container[isvisible='true'] > ul > .github {
+  transform: translate(0em, 0em) rotate(0deg);
+}
+
+.container li {
+  width: 100%;
+  filter: drop-shadow(1px 1px 1px #0005);
+  transition: transform 2s ease, scale 0.3s;
+}
+.container li:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.container li > img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.instagram {
+ transform: rotate(500deg);
+}
+
+.linkedin {
+  margin-left: 1em;
+  margin-top: -0.3em;
+  transform: translate(-1em, -3em) rotate(500deg);
+}
+
+.whatsapp {
+  margin-left: 3em;
+  margin-top: -0.8em;
+  transform: translate(-3em, -5em) rotate(500deg);
+}
+
+.github {
+  margin-left: 5.3em;
+  margin-top: -1.3em;
+  transform: translate(-5.3em, -8em) rotate(500deg);
+}
+
+@keyframes z {
+  40%{
+    z-index: 0;
+  }
+  100% {
+    z-index: 60;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container {
+    font-size: 1.2rem;
+  }
+}

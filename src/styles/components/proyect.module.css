@@ -1,0 +1,47 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.container > h3 {
+  text-align: center;
+  margin: .5em;
+}
+
+.container > p {
+  font-size: .8em;
+  padding: 0 2em;
+}
+
+.containerImg{
+  aspect-ratio: 4/3;
+  margin: .7em;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 2em;
+}
+
+.containerImg > img {
+    object-fit: cover;
+      height: 100%;
+      width: 100%;
+}
+
+.programs{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  height: 1.7em;
+}
+
+.programs > li {
+aspect-ratio: 1/1;
+height: 100%;
+}
+
+.programs img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}

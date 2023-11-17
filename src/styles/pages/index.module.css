@@ -1,5 +1,146 @@
-.main{
-  background-color: aqua;
+/*CSS para el main*/
+.main {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
+  background-image: url('../../assets/images/fondoMain.jpg');
+  background-size: cover;
+}
+
+.containerText{
+  width: 85%;
+  max-width: 600px;
+  margin: 1em 0;
+  filter: drop-shadow(0px 0px .8em #fff)drop-shadow(0px 0px .8em #fff)drop-shadow(0px 0px .8em #fff)drop-shadow(0px 0px .8em #fff)drop-shadow(0px 0px .8em #fff)
+}
+
+.containerText h1 {
+  display: flex; 
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.containerText > p{
+  font-size: .8em;
+  padding: .5em 1em;
+}
+
+.containerUl {
+  width: min-content;
+}
+
+.containerUl ul {
+  position: absolute;
+  transition: transform .5s ease;
+  transform: translateY(-0%);
+}
+
+.containerUl li {
+  width: max-content;
+}
+
+.links a {
+
+  font-size: .7em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #111;
+}
+
+/*CSS para proyectos*/
+
+.articleProyects{
+  position: relative;
+  color: #fff;
+  width: 100vw;
+  background-color: #111;
+}
+
+.square{
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 140%;
+  left: -20%;
+  transform-origin: 40% 50%;
+  transform: rotate(4deg);
+  background-color: #666;
+}
+
+.proyects{
+  position: sticky;
+  padding: 1em 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proyects > h2{
+  margin: 1em;
+  font-size: 2em;
+}
+
+.proyects > ul{
+  width: 90%;
+  max-width: 35em;
+  display: grid;
+  justify-content: center;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fill, 16em);
+}
+
+/*CSS para conocimientos*/
+
+.articleKnowledge{
+  position: sticky;
+    padding: 1em 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articleKnowledge > h2 {
+  text-align: center;
+  width: max-content;
+  margin: 1em;
+  margin-bottom: 2em;
+  font-size: 2em;
+}
+
+.articleKnowledge > ul {
+  width: 90%;
+  max-width: 35em;
+  display: grid;
+  justify-content: center;
+  gap: 2.5em;
+  grid-template-columns: repeat(auto-fill, 17em);
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .main {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .main {
+    font-size: 2.1rem;
+    flex-direction: row;
+  }
 }
